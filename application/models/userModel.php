@@ -20,7 +20,10 @@ class userModel extends CI_Model {
 	}
 
 	public function update($user_data) {
-		return $this->db->update($this->table, $user_data);
+		$this->db->where('id', $user_data['id']);
+		if ($this->db->update($this->table, $user_data)) 
+			return $this->getById($user_data['id']);
+		return false;
 	}
 
 	public function getByUsername($username)
