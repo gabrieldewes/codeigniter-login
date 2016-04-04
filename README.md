@@ -1,7 +1,6 @@
-# CodeIgniter slave-test
+# CodeIgniter Login
 
-Aplicação de login simples, contendo crud básico e Hash de senhas.
-Desenvolvida para testes e aprendizado.
+Aplicação de login simples, base para sistemas com login e níveis de permissão. CRUD completo e Hash de senhas.
 
 ## Como usar
 
